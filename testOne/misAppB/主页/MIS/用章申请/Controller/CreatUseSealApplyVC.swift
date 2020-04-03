@@ -23,7 +23,8 @@ class CreatUseSealApplyVC: UIViewController {
         btn.addTarget(self, action: #selector(saveAction), for: .touchUpInside)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: btn)
     }
-    
+    //    MARK:Action
+    //    MARK:Action
 //    MARK:Action
     @objc func saveAction() {
            
