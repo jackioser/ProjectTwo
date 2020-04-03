@@ -1,0 +1,14 @@
+platform :ios, '10.0'
+inhibit_all_warnings!
+
+target 'misAppB' do
+  use_frameworks!
+  pod 'Alamofire', '4.7.3'
+  pod 'MBProgressHUD', '1.1.0'
+  pod 'IQKeyboardManagerSwift', '6.2.0'
+  pod 'HandyJSON', '5.0.0'
+  pod 'MJRefresh', '3.2.0'
+  pod 'SnapKit', '~> 5.0.0'
+  pod 'Then'
+
+end

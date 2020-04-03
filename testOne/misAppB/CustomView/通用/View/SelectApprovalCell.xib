@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="dAZ-cB-MJK" customClass="SelectApprovalCell" customModule="misAppB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dAZ-cB-MJK" id="CYn-nP-wCb">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xtq-1U-C0J">
+                        <rect key="frame" x="50" y="12" width="40" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pro-d8-GId">
+                        <rect key="frame" x="20" y="7" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="LnM-WL-OmK"/>
+                            <constraint firstAttribute="height" constant="30" id="vn0-eE-aD7"/>
+                        </constraints>
+                        <state key="normal" image="selectCircel"/>
+                        <state key="selected" image="blueSelected"/>
+                        <connections>
+                            <action selector="selectApproval:" destination="dAZ-cB-MJK" eventType="touchUpInside" id="Hz6-PY-LpO"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwS-PS-5dO">
+                        <rect key="frame" x="364" y="4.5" width="40" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="FqX-Oy-b9D"/>
+                            <constraint firstAttribute="height" constant="35" id="Ju3-Nh-uu4"/>
+                        </constraints>
+                        <state key="normal" image="topArrow-1"/>
+                        <state key="selected" image="bottomArrow"/>
+                        <connections>
+                            <action selector="buttonTapped:" destination="dAZ-cB-MJK" eventType="touchUpInside" id="bZJ-Wd-wx2"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Xtq-1U-C0J" firstAttribute="leading" secondItem="Pro-d8-GId" secondAttribute="trailing" id="6qn-zQ-kf1"/>
+                    <constraint firstItem="Pro-d8-GId" firstAttribute="leading" secondItem="CYn-nP-wCb" secondAttribute="leading" constant="20" id="JnE-va-U2K"/>
+                    <constraint firstItem="Xtq-1U-C0J" firstAttribute="centerY" secondItem="CYn-nP-wCb" secondAttribute="centerY" id="L2w-fK-DV4"/>
+                    <constraint firstItem="Pro-d8-GId" firstAttribute="centerY" secondItem="CYn-nP-wCb" secondAttribute="centerY" id="MuX-Pc-qGB"/>
+                    <constraint firstItem="rwS-PS-5dO" firstAttribute="centerY" secondItem="Xtq-1U-C0J" secondAttribute="centerY" id="Rpa-ag-jlx"/>
+                    <constraint firstAttribute="trailing" secondItem="rwS-PS-5dO" secondAttribute="trailing" constant="10" id="kZr-lq-wdq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="button" destination="rwS-PS-5dO" id="K6a-T4-Krs"/>
+                <outlet property="leading" destination="JnE-va-U2K" id="adv-mm-kgE"/>
+                <outlet property="titleLabel" destination="Xtq-1U-C0J" id="KLA-bY-0m1"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="136.60714285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="blueSelected" width="18" height="18"/>
+        <image name="bottomArrow" width="17" height="10.5"/>
+        <image name="selectCircel" width="18" height="18"/>
+        <image name="topArrow-1" width="17" height="10.5"/>
+    </resources>
+</document>

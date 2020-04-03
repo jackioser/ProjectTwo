@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="zB0-jg-9co" customClass="SelectTimeCollectionCell" customModule="MIS移动端A" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xyf-TA-I8l">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ye5-kO-bie">
+                        <rect key="frame" x="5" y="5" width="40" height="40"/>
+                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pX3-X0-Ltc">
+                        <rect key="frame" x="15.5" y="15.5" width="19.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zb5-p0-apD">
+                        <rect key="frame" x="0.0" y="49.5" width="50" height="0.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="QPs-yu-5lg"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="pX3-X0-Ltc" firstAttribute="centerX" secondItem="xyf-TA-I8l" secondAttribute="centerX" id="Fga-Iu-DKK"/>
+                    <constraint firstItem="ye5-kO-bie" firstAttribute="top" secondItem="xyf-TA-I8l" secondAttribute="top" constant="5" id="TiP-Q6-IGK"/>
+                    <constraint firstItem="ye5-kO-bie" firstAttribute="leading" secondItem="xyf-TA-I8l" secondAttribute="leading" constant="5" id="cNw-m5-LGq"/>
+                    <constraint firstAttribute="trailing" secondItem="ye5-kO-bie" secondAttribute="trailing" constant="5" id="d3b-zE-Hww"/>
+                    <constraint firstItem="pX3-X0-Ltc" firstAttribute="centerY" secondItem="xyf-TA-I8l" secondAttribute="centerY" id="hml-sZ-lBI"/>
+                    <constraint firstAttribute="bottom" secondItem="zb5-p0-apD" secondAttribute="bottom" id="ivx-zb-707"/>
+                    <constraint firstAttribute="bottom" secondItem="ye5-kO-bie" secondAttribute="bottom" constant="5" id="jMs-vM-J3k"/>
+                    <constraint firstAttribute="trailing" secondItem="zb5-p0-apD" secondAttribute="trailing" id="l9m-W0-9Qj"/>
+                    <constraint firstItem="zb5-p0-apD" firstAttribute="leading" secondItem="xyf-TA-I8l" secondAttribute="leading" id="u6R-iN-KpL"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="backView" destination="ye5-kO-bie" id="Bao-NB-fha"/>
+                <outlet property="bottomLine" destination="zb5-p0-apD" id="0QR-t8-uLu"/>
+                <outlet property="contentLabel" destination="pX3-X0-Ltc" id="gbS-BB-8rq"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="142"/>
+        </collectionViewCell>
+    </objects>
+</document>
